@@ -9,8 +9,6 @@ const burger = (props) => {
         return <BurgerIngredient key={ingredientKey + i} type={ingredientKey} />
       });
     }).reduce((arr, el) => {
-        console.log(arr,"previousValue");
-        console.log(el,"currentValue");
         return arr.concat(el);
     }, []);
 
